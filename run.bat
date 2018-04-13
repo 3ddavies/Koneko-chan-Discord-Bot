@@ -1,6 +1,4 @@
-cls
 color a
 cls
-newbot.py
-cls
+Discordbot.py
 cls
