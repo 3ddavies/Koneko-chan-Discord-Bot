@@ -27,6 +27,7 @@ from song import *
 Koneko-Chan Discord Bot
 Created By: Gabriel Peressini
 Protected by CC BY-SA 4.0
+For more information, please view the LICENSE file or visit:
 
 https://creativecommons.org/licenses/by-sa/4.0/
 """
