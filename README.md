@@ -21,4 +21,4 @@ Then, navigate to the bottom of [Discordbot.py](Discordbot.py) and put your bot 
 If you would like to add a new command, please create a branch and label it with the name of your command. Before any new commands are pushed to master, they will undergo at least five hours of testing by me.
 
 
-If you have any questions you can contact me at gabe.peressini@gmail.com or on discord: Jupiter and Mars#9960
+If you have any questions you can contact me at gabe.peressini@gmail.com or on discord: Jupiter and Mars#9960 or [Koneko-chan Help server](https://discord.gg/GYS8TwG)
