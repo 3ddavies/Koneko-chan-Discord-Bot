@@ -1,4 +1,4 @@
-# Koneko Chan - A Discord Bot
+# Koneko-chan - A Discord Bot
 ## Created by Gabriel Peressini
 
 
