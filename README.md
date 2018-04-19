@@ -1,5 +1,5 @@
 # Koneko Chan - A Discord Bot
-Created by Gabriel Peressini
+## Created by Gabriel Peressini
 
 LICENSE:
 For this project I've used a CC-BY-SA 4.0 license. For more information, please view the LICENSE file.
