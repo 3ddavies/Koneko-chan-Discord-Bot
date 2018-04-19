@@ -11,7 +11,8 @@ I've only tested this on a Windows 10 Pro 64-bit ssytem. This should mostly work
 
 
 ### SETUP:
-First, you will need a bot token. To obtain this, you will need to create a bot account. Head over to https://discordapp.com/developers/applications/me/create and create a profile to obtain a bot token.
+First, you will need a bot token. To obtain this, you will need to create a bot account. Head over to the 
+[Discord new app tool](https://discordapp.com/developers/applications/me/create) and create a profile to obtain a bot token.
 Then, navigate to the bottom of Discordbot.py and put your bot token where the text 'Put your bot token here' is. 
 **PLEASE NOTE** keep the quotes around your bot token.
 
