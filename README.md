@@ -7,7 +7,7 @@
 For this project I've used a CC-BY-SA 4.0 license. For more information, please view the [LICENSE](LICENSE) file.
 
 ### THINGS TO NOTE:
-I've only tested this on a Windows 10 Pro 64-bit ssytem. This should mostly work on linux, but you might have to make your own version of the included batch files.
+I've only tested this on a Windows 10 Pro 64-bit system. This should mostly work on linux, but you might have to make your own version of the included batch files.
 
 
 ### SETUP:
