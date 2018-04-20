@@ -51,15 +51,7 @@ handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w'
 handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
 logger.addHandler(handler)
 usedimgs = []
-"""
 
-class myClient(discord.client):
-
-	@asyncio.coroutine
-	def on_message(self, message):	
-		yield from self.send_message(message.channel, 'Hello World!')
-
-"""
 
 koneko = Bot(description="A Discord Bot!", command_prefix="!", pm_help = True)
 #koneko.remove_command('help')
