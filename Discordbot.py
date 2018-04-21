@@ -335,6 +335,7 @@ async def listtags(*args):
 		dantaglist.append(tag['name'])
 		print(dantaglist)
 	await koneko.say(dantaglist)
+
 @koneko.command(pass_context=True)
 async def arclog(ctx,*args):
 	if (str(ctx.message.author) in admins):
@@ -403,5 +404,18 @@ async def gif(ctx):
 	with open('dancingmiku2.gif', 'rb') as f:
 		await koneko.send_file(ctx.message.channel, f)
 
+@koneko.command(pass_context=True)
+async def roll(ctx,*args):
+	"""
+	placeholder
+	"""
+	try:
+		die = int(args[0])
+		with open('dice.gif', 'rb') as f:
+			await koneko.send_file(ctx.message.channel, f)
+		await asyncio.sleep(1)
+		await koneko.say("You rolled "+str(randint(1,die)))
 
+	except ValueError:
+		await koneko.say("Please tell me how many sides the die has.")
 koneko.run('Put your bot token here')
