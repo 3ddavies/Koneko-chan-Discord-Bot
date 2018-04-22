@@ -413,11 +413,14 @@ async def dice(ctx,*args):
 		rollsum = 0
 		with open('dice.gif', 'rb') as f:
 			await koneko.send_file(ctx.message.channel, f)
-		for i in range(0,x+1):
+		for i in range(1,x+1):
 			z = randint(1,y)
-			rollarr.append(str(z))
+			rollarr.append(z)
 			rollsum+=z
 		await koneko.say("You rolled "+str(x)+" d"+str(y)+"s. They landed on: "+str(rollarr)+" for a total of "+str(rollsum))
 	except ValueError:
 		await koneko.say("Please tell me how many sides the die has.")
+	except IndexError:
+		await koneko.say("Please tell me how many sides the die has.")
+
 koneko.run('Put your bot token here')
