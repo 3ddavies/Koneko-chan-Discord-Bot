@@ -306,7 +306,7 @@ async def hentai(ctx,*args):
 						urlarr.append("http://danbooru.donmai.us"+ftst)
 						usedimgs.append(post['file_url'])
 					else:
-						urlarr.append("http://danbooru.donmai.us"+post['file_url'])
+						urlarr.append(post['file_url'])
 						usedimgs.append(post['file_url'])
 				print(usedimgs)
 			except KeyError:
