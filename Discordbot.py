@@ -27,7 +27,6 @@ from song import *
 Koneko-Chan Discord Bot
 Created By: Gabriel Peressini
 Protected by CC BY-SA 4.0
-For more information, please view the LICENSE file or visit:
 
 https://creativecommons.org/licenses/by-sa/4.0/
 """
@@ -36,7 +35,7 @@ https://creativecommons.org/licenses/by-sa/4.0/
 
 
 admins =['Jupiter and Mars#9960','Cyro#6377','⛧AirStrikerAlex⛧#8618']
-danclient = Danbooru('danbooru', username='Put your Danbooru username here', api_key='Put your Danbooru api key here')
+danclient = Danbooru('danbooru', username='Gabirel', api_key='HpR8leIkDNZYpl0ryWuFb0B0or2691Cp0PVEx_zP9fQ')
 tags = danclient.tag_list(order='date')
 
 """
@@ -51,23 +50,44 @@ handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w'
 handler.setFormatter(logging.Formatter('%(asctime)s:%(levelname)s:%(name)s: %(message)s'))
 logger.addHandler(handler)
 usedimgs = []
+"""
 
+class myClient(discord.client):
+
+	@asyncio.coroutine
+	def on_message(self, message):	
+		yield from self.send_message(message.channel, 'Hello World!')
+
+"""
 
 koneko = Bot(description="A Discord Bot!", command_prefix="!", pm_help = True)
+kuroka = Bot(description="Another Discord Bot!", command_prefix="-", pm_help = True)
 #koneko.remove_command('help')
 
 @koneko.event
 async def on_ready():
 	print('Logged in as '+koneko.user.name+' (ID:'+koneko.user.id+') | Connected to '+str(len(koneko.servers))+' servers | Connected to '+str(len(set(koneko.get_all_members())))+' users')
-	print('Discord.py Version: {} | Python Ver: {}'.format(discord.__version__, platform.python_version()))
-	print('Invite link {}:'.format(koneko.user.name))
+	print('--------')
+	print('Use this link to invite {}:'.format(koneko.user.name))
 	print('https://discordapp.com/oauth2/authorize?client_id={}&scope=bot&permissions=8'.format(koneko.user.id))
-	return await koneko.change_presence(game=discord.Game(name='Hand Delivering Hentai'))
+	print('--------')
+	print('Current Discord.py Version: {} | Current Python Version: {}'.format(discord.__version__, platform.python_version()))
+	return await koneko.change_presence(game=discord.Game(name='Owo whats this!?'))
+
+
+
+@kuroka.event
+async def on_ready():
+	print('Logged in as '+kuroka.user.name+' (ID:'+kuroka.user.id+') | Connected to '+str(len(kuroka.servers))+' servers | Connected to '+str(len(set(kuroka.get_all_members())))+' users')
+	print('--------')
+	print('Use this link to invite {}:'.format(kuroka.user.name))
+	print('https://discordapp.com/oauth2/authorize?client_id={}&scope=bot&permissions=8'.format(kuroka.user.id))
+	return await kuroka.change_presence(game=discord.Game(name='Ready to roll, baby!'))
 	
 @koneko.event
 async def on_message(message):
 		await koneko.process_commands(message)
- 
+
 @koneko.event
 async def on_error(self, event, *args, **kwargs):
 	ex_type, ex, stack = sys.exc_info()
@@ -86,6 +106,13 @@ async def on_error(self, event, *args, **kwargs):
 	else:
 		traceback.print_exc()
 
+@kuroka.event
+async def on_message(message):
+	await kuroka.process_commands(message)
+
+@kuroka.command()
+async def ping(*args):
+	await kuroka.say(":ping_pong: Pong!")
 
 @koneko.command()
 async def ping(*args):
@@ -161,7 +188,7 @@ async def restart(ctx,*args):
 		os.system('run.bat')
 		exit()
 	else:
-		await koneko.say("You can't do this "+ctx.message.author.mention+"!")
+		await koneko.say("YOU BETTER BACK THE FUCK UP BEFORE YOU GET SMACKED THE FUCK UP "+ctx.message.author.mention+".")
 
 @koneko.command(pass_context=True)
 async def omgmt(ctx, message: discord.Message = None):
@@ -302,13 +329,14 @@ async def hentai(ctx,*args):
 					ftst = post['file_url']
 					firsttwentysix = ftst[0:26]
 					if (firsttwentysix == 'https://hijiribe.donmai.us'):
+						print("hiji")
 						ftst = ftst[26:len(ftst)]
 						urlarr.append("http://danbooru.donmai.us"+ftst)
 						usedimgs.append(post['file_url'])
 					else:
 						urlarr.append(post['file_url'])
 						usedimgs.append(post['file_url'])
-				print(usedimgs)
+				#print(usedimgs)
 			except KeyError:
 				await koneko.say("Sorry, "+ctx.message.author.mention+", but I couldn't find "+str(ham)+" images with the tags: "+str(tstr)+" Here's what I did find, though (If I don't post anything then I didn't find anything.) :o")
 			try:
@@ -335,7 +363,6 @@ async def listtags(*args):
 		dantaglist.append(tag['name'])
 		print(dantaglist)
 	await koneko.say(dantaglist)
-
 @koneko.command(pass_context=True)
 async def arclog(ctx,*args):
 	if (str(ctx.message.author) in admins):
@@ -364,7 +391,6 @@ async def credits(*args):
 	Displays credits.
 	"""
 	myid = '<@266286756893032451>'
-	cyroid = '<@137974023979139073>'
 	await koneko.say("Programmed by Gabe "+myid)
 
 
@@ -404,23 +430,33 @@ async def gif(ctx):
 	with open('dancingmiku2.gif', 'rb') as f:
 		await koneko.send_file(ctx.message.channel, f)
 
-@koneko.command(pass_context=True)
+
+@kuroka.command(pass_context=True)
 async def dice(ctx,*args):
 	try:
-		x = int(args[0])
-		y = int(args[1])
+		numofdice = int(args[0])
+		sidesondice = int(args[1])
 		rollarr = []
 		rollsum = 0
 		with open('dice.gif', 'rb') as f:
-			await koneko.send_file(ctx.message.channel, f)
-		for i in range(1,x+1):
-			z = randint(1,y)
-			rollarr.append(z)
-			rollsum+=z
-		await koneko.say("You rolled "+str(x)+" d"+str(y)+"s. They landed on: "+str(rollarr)+" for a total of "+str(rollsum))
+			await kuroka.send_file(ctx.message.channel, f)
+		for i in range(1,numofdice+1):
+			rollresult = randint(1,sidesondice)
+			rollarr.append(rollresult)
+			rollsum+=rollresult
+		await kuroka.say("You rolled "+str(numofdice)+" d"+str(sidesondice)+"s. They landed on: "+str(rollarr)+" for a total of "+str(rollsum))
 	except ValueError:
-		await koneko.say("Please tell me how many sides the die has.")
+		await kuroka.say("Please tell me how many sides the die has.")
 	except IndexError:
-		await koneko.say("Please tell me how many sides the die has.")
+		await kuroka.say("Please tell me how many sides the die has.")
 
-koneko.run('Put your bot token here')
+
+loop = asyncio.get_event_loop()
+loop.create_task(koneko.start('Koneko bot token here'))
+loop.create_task(kuroka.start('Kuroka bot token here'))
+
+
+try:
+    loop.run_forever()
+finally:
+    loop.stop()
