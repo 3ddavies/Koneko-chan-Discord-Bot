@@ -188,7 +188,7 @@ async def restart(ctx,*args):
 		os.system('run.bat')
 		exit()
 	else:
-		await koneko.say("YOU BETTER BACK THE FUCK UP BEFORE YOU GET SMACKED THE FUCK UP "+ctx.message.author.mention+".")
+		await koneko.say("You don't have permission do do this "+ctx.message.author.mention+".")
 
 @koneko.command(pass_context=True)
 async def omgmt(ctx, message: discord.Message = None):
