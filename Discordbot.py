@@ -451,6 +451,21 @@ async def dice(ctx,*args):
 		await kuroka.say("Please tell me how many sides the die has.")
 
 
+@kuroka.command(pass_context=True)
+async def join(ctx, *args):
+	"""
+	Makes Kuroka joins the voice channel you are connected to!
+	"""
+	global voicha
+	voicha = ctx.message.author.voice.voice_channel
+	voichaid = ctx.message.author.voice.voice_channel.id
+	try:
+		await kuroka.join_voice_channel(voicha)
+		await kuroka.say(ctx.message.author.mention+" joining voice channel "+str(voicha))
+	except AttributeError:
+		await kuroka.say(ctx.message.author.mention+ "you aren't in a voice channel, silly!")
+
+
 loop = asyncio.get_event_loop()
 loop.create_task(koneko.start('Koneko bot token here'))
 loop.create_task(kuroka.start('Kuroka bot token here'))
