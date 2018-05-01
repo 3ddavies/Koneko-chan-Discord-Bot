@@ -456,17 +456,20 @@ async def join(ctx, *args):
 	"""
 	Makes Kuroka joins the voice channel you are connected to!
 	"""
-	global voicha
 	voicha = ctx.message.author.voice.voice_channel
 	voichaid = ctx.message.author.voice.voice_channel.id
 	try:
-		await kuroka.join_voice_channel(voicha)
+		global cckvc
+		cckvc =await kuroka.join_voice_channel(voicha)
 		await kuroka.say(ctx.message.author.mention+" joining voice channel "+str(voicha))
 	except AttributeError:
 		await kuroka.say(ctx.message.author.mention+ "you aren't in a voice channel, silly!")
 
 @kuroka.command(pass_context = True)
 async def leave(ctx):
+	"""
+	Makes Kuroka leave the voice channel she is connected to.
+	"""
 	for voic in kuroka.voice_clients:
 		if(voic.server == ctx.message.server):
 			return await voic.disconnect()
@@ -474,6 +477,14 @@ async def leave(ctx):
 
 
 
+@kuroka.command(pass_context=True)
+async def play(ctx, url):
+	"""
+	Plays audio from a YouTube video.
+	"""
+    global player
+    player = await cckvc.create_ytdl_player(url)
+    player.start()
 
 loop = asyncio.get_event_loop()
 loop.create_task(koneko.start('Koneko bot token here'))
