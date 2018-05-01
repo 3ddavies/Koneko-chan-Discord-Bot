@@ -380,7 +380,7 @@ async def arclog(ctx,*args):
 		os.system('rmlgrs.bat')
 		exit()
 	else:
-		await koneko.say("Fuck off "+ctx.message.author.mention+"!")
+		await koneko.say("Invalid perms "+ctx.message.author.mention+"!")
 
 @koneko.command()
 async def ppap(*args):
