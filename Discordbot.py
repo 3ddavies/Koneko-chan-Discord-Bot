@@ -465,6 +465,15 @@ async def join(ctx, *args):
 	except AttributeError:
 		await kuroka.say(ctx.message.author.mention+ "you aren't in a voice channel, silly!")
 
+@kuroka.command(pass_context = True)
+async def leave(ctx):
+	for voic in kuroka.voice_clients:
+		if(voic.server == ctx.message.server):
+			return await voic.disconnect()
+	return await kuroka.say("Oh "+ctx.message.author.mention+", I'm not in a voice channel! :stuck_out_tongue_closed_eyes:")
+
+
+
 
 loop = asyncio.get_event_loop()
 loop.create_task(koneko.start('Koneko bot token here'))
