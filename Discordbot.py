@@ -499,6 +499,32 @@ async def stop(ctx):
 			else:
 				return await kuroka.say("Umm... "+ctx.message.author.mention+" I'm not playing anything!")
 
+@kuroka.command(pass_context = True)
+async def pause(ctx):
+	"""
+	Pauses the music
+	"""
+	for voic in kuroka.voice_clients:
+		if(voic.server == ctx.message.server):
+			if player.is_playing():
+					player.pause()
+			else:
+				return await kuroka.say(ctx.message.author.mention+" there's nothing for me to pause!")
+
+
+
+@kuroka.command(pass_context = True)
+async def resume(ctx):
+	"""
+	Continues a paused song
+	"""
+	for voic in kuroka.voice_clients:
+		if(voic.server == ctx.message.server):
+			if not player.is_playing():
+					player.resume()
+			else:
+				return await kuroka.say(ctx.message.author.mention+" there is nothing paused.")
+
 
 
 loop = asyncio.get_event_loop()
