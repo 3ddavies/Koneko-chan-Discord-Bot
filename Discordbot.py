@@ -486,6 +486,21 @@ async def play(ctx, url):
     player = await cckvc.create_ytdl_player(url)
     player.start()
 
+
+@kuroka.command(pass_context = True)
+async def stop(ctx):
+	"""
+	Stops playing the song
+	"""
+	for voic in kuroka.voice_clients:
+		if(voic.server == ctx.message.server):
+			if player.is_playing():
+					player.stop()
+			else:
+				return await kuroka.say("Umm... "+ctx.message.author.mention+" I'm not playing anything!")
+
+
+
 loop = asyncio.get_event_loop()
 loop.create_task(koneko.start('Koneko bot token here'))
 loop.create_task(kuroka.start('Kuroka bot token here'))
