@@ -293,7 +293,7 @@ async def hentaigel(ctx,*args):
 		await koneko.say("I'm sorry "+ctx.message.author.mention+", but this command is not currently, and may not ever be, available to the public.")
 
 @koneko.command(pass_context=True)
-async def hentai(ctx,*args):
+async def image(ctx,*args):
 	"""
 	( ͡° ͜ʖ ͡°)
 	"""
