@@ -5,3 +5,5 @@ Discord.py-async
 Discord.py[voice]
 Asyncio
 youtube_dl
+ffmpeg
+NOTE: make sure you add ffmpeg to your path. The path you should add is: %yourinstalldir%/bin
