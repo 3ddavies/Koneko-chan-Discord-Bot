@@ -22,6 +22,8 @@ import urllib.request
 from random import *
 import shutil
 from song import *
+if not discord.opus.is_loaded():
+	discord.opus.load_opus('opus')
 
 """
 Koneko-Chan Discord Bot
