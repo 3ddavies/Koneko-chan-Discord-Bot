@@ -2,4 +2,6 @@ Listed here are the libraries you will need to install to run Koneko-chan:
 
 Pybooru
 Discord.py-async
-Requests
+Discord.py[voice]
+Asyncio
+youtube_dl
