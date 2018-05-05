@@ -1,33 +1,39 @@
-#COMMANDS:
-##Koneko:
-###Utility/Debug:
-####anako
-####arclog
-####climsg
-####gab
-####getauth
-####listtags
-####logout
-####ostimes
-####restart
-####setchan
-####ss
-####stsca
-####time
-####vomit
-###File Exploring:
-####cd
-####ls
-####pwd
+# COMMANDS:
 
-###Other:
-####credits
-####gif
-####image
-####ppap
-####stats
+## Koneko:
 
-###Deprecated:
-omgmt
-imgdan
-imggel
+### Utility/Debug:
+
+#### anako
+#### arclog
+#### climsg
+#### gab
+#### getauth
+#### listtags
+#### logout
+#### ostimes
+#### restart
+#### setchan
+#### ss
+#### stsca
+#### time
+#### vomit
+
+### File Exploring:
+
+#### cd
+#### ls
+#### pwd
+
+### Other:
+#### credits
+#### gif
+#### image
+#### ppap
+#### stats
+
+### Deprecated:
+
+#### omgmt
+#### imgdan
+#### imggel
