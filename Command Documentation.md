@@ -2,7 +2,7 @@
 
 # [Koneko:](#koneko-1)
 
-## [Utility/Debug:](#utilitydebug)
+## [Utility/Debug:](#utilitydebug-1)
 
 [anako](#anako)
 
