@@ -246,5 +246,5 @@ Stands for once more get message test. Omgmt is a test in getting the id of a me
 #### vci:
 Usage: ```-vci```
 
-Short for voice channel info. Returns info about the voice channel you are in so you must be in a voice channel in order for this to work. [Kuroka](#Kuroka-1) will return somthing like this: '@Jupiter and Mars is connected to voice channel Test id: 440307901542957057'
+Short for voice channel info. Returns info about the voice channel you are in so you must be in a voice channel in order for this to work. [Kuroka](#kuroka-1) will return somthing like this: '@Jupiter and Mars is connected to voice channel Test id: 440307901542957057'
 
