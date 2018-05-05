@@ -451,10 +451,25 @@ async def dice(ctx,*args):
 		await kuroka.say("Please tell me how many sides the die has.")
 
 
+@kuroka.group(pass_context=True)
+async def music(ctx):
+	if ctx.invoked_subcommand is None:
+		await bot.say('Invalid music command. For a list of music commands, please do -help music')
+
 @kuroka.command(pass_context=True)
+async def vci(ctx, *args):
+	"""
+	Makes Kuroka join a voice channel
+	"""
+	voicha = ctx.message.author.voice.voice_channel
+	voichaid = ctx.message.author.voice.voice_channel.id
+	await kuroka.say(ctx.message.author.mention+" is connected to voice channel "+str(voicha)+" id: "+str(voichaid))
+
+
+@music.command(pass_context=True)
 async def join(ctx, *args):
 	"""
-	Makes Kuroka joins the voice channel you are connected to!
+	Makes Kuroka join the voice channel you are connected to!
 	"""
 	voicha = ctx.message.author.voice.voice_channel
 	voichaid = ctx.message.author.voice.voice_channel.id
@@ -465,10 +480,10 @@ async def join(ctx, *args):
 	except AttributeError:
 		await kuroka.say(ctx.message.author.mention+ "you aren't in a voice channel, silly!")
 
-@kuroka.command(pass_context = True)
+@music.command(pass_context = True)
 async def leave(ctx):
 	"""
-	Makes Kuroka leave the voice channel she is connected to.
+	Makes Kuroka leave the voice channel she is in in the server where the command was issued.
 	"""
 	for voic in kuroka.voice_clients:
 		if(voic.server == ctx.message.server):
@@ -476,21 +491,17 @@ async def leave(ctx):
 	return await kuroka.say("Oh "+ctx.message.author.mention+", I'm not in a voice channel! :stuck_out_tongue_closed_eyes:")
 
 
-
-@kuroka.command(pass_context=True)
+@music.command(pass_context=True)
 async def play(ctx, url):
-	"""
-	Plays audio from a YouTube video.
-	"""
     global player
     player = await cckvc.create_ytdl_player(url)
     player.start()
 
 
-@kuroka.command(pass_context = True)
+@music.command(pass_context = True)
 async def stop(ctx):
 	"""
-	Stops playing the song
+	Stops the music
 	"""
 	for voic in kuroka.voice_clients:
 		if(voic.server == ctx.message.server):
@@ -499,7 +510,8 @@ async def stop(ctx):
 			else:
 				return await kuroka.say("Umm... "+ctx.message.author.mention+" I'm not playing anything!")
 
-@kuroka.command(pass_context = True)
+
+@music.command(pass_context = True)
 async def pause(ctx):
 	"""
 	Pauses the music
@@ -513,7 +525,7 @@ async def pause(ctx):
 
 
 
-@kuroka.command(pass_context = True)
+@music.command(pass_context = True)
 async def resume(ctx):
 	"""
 	Continues a paused song
