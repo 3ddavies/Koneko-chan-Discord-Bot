@@ -274,3 +274,18 @@ Makes [Kuroka](#kuroka-1) leave the voice channel she is currently connected to.
 Usage: ```-music pause```
 
 Pauses what is currently being played. The difference between this and [stop](#stop) is that if you use [pause](#pause) you can use [resume](#resume) to resume playing where as [stop](#stop) can't be resumed.
+
+#### play:
+Usage: ```-music play x```
+
+Downloads and plays x where x is url for a YouTube video. Example: ```-music play https://www.youtube.com/watch?v=YUhtV9mCsrA```
+
+#### stop:
+Usage: ```-music pause```
+
+Stops playing audio. If you want to be able to resume playing, use [pause](#pause) isntead.
+
+#### resume:
+Usage: ```music resume```
+
+Resumes playing paused audio. Will not work if you used [stop](#stop)
