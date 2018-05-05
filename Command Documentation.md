@@ -1,8 +1,8 @@
 # COMMANDS:
 
-[Koneko:](#koneko)
+# [Koneko:](#koneko)
 
-[Utility/Debug:](#utilitydebug)
+## [Utility/Debug:](#utilitydebug)
 
 [anako](#anako)
 
