@@ -31,7 +31,7 @@
 [vomit](#vomit)
 
 
-### [File Exploring:](#fileexploring-1)
+### [File Exploring:](#file-exploring-1)
 
 [cd](#cd)
 
