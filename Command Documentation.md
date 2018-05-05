@@ -255,3 +255,11 @@ Short for voice channel info. Returns info about the voice channel you are in so
 Usage: ```-dice x y```
 
 Rolls x dice with y sides and posts [this gif](dice.gif). Example: ```-dice 5 6``` will roll five six-sided dice. The gif is posted first then the result looks somthing like this: 'You rolled 5 d6s. They landed on: \[5, 3, 5, 2, 3\] for a total of 18'
+
+
+### Music:
+The music command is a bit different then the other commands. It has six subcommands, the names of which are below:
+
+#### join:
+Usage: ```-music join```
+Makes [Kuroka](#kuroka-1) join the voice channel you are currently connected to. This means you must be in a voice channel for this to work. PLEASE NOTE: If [Kuroka](#kuroka-1) is already in a voice channel, please use [leave](#leave) first as switching between voice channels is not yet supported.
