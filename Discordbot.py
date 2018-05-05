@@ -35,7 +35,7 @@ https://creativecommons.org/licenses/by-sa/4.0/
 
 
 admins =['Jupiter and Mars#9960','Cyro#6377','⛧AirStrikerAlex⛧#8618']
-danclient = Danbooru('danbooru', username='Gabirel', api_key='HpR8leIkDNZYpl0ryWuFb0B0or2691Cp0PVEx_zP9fQ')
+danclient = Danbooru('danbooru', username='Gabirel', api_key='Danbooru api key here')
 tags = danclient.tag_list(order='date')
 
 """
@@ -125,7 +125,7 @@ async def logout(ctx,*args):
 		await asyncio.sleep(1)
 		await koneko.logout()
 	else:
-		await koneko.say("Please, "+ctx.message.author.mention+", don't touch me there!")
+		await koneko.say("Sorry, "+ctx.message.author.mention+", you can't log me out!")
 
 @koneko.command(pass_context=True)
 async def ss(ctx,*args):
@@ -160,7 +160,7 @@ async def anako(ctx,*args):
 			else:
 				await koneko.say(xwts)
 	else:
-		await koneko.say("STRANGER DANGER!!!")
+		await koneko.say("You don't have permission to do this!")
 
 @koneko.command(pass_context=True)
 async def stsca(ctx,*args):
@@ -205,7 +205,7 @@ async def omgmt(ctx, message: discord.Message = None):
 		asyncio.sleep(5)
 		await koneko.delete_message(ctx.message.id)
 	else:
-		await koneko.say("Only senpai can touch me there "+ctx.message.author.mention+".")
+		await koneko.say("You don't have permission do do this "+ctx.message.author.mention+".")
 
 @koneko.command()
 async def pwd(*args):
@@ -276,24 +276,24 @@ async def vomit(ctx,*args):
 			await koneko.say(vomitarray[vomititr])
 			vomititr+=1
 	else:
-		await koneko.say("Sorry "+ctx.message.author.mention+", I only vomit for senpai.:wink:")
+		await koneko.say("Sorry "+ctx.message.author.mention+", but you are not allowed to do this!")
 		
 @koneko.command(pass_context=True)
-async def hentaidan(ctx,*args):
+async def imgdan(ctx,*args):
 	if (str(ctx.message.author) in admins):
 		await koneko.say("http://danbooru.donmai.us/posts/"+str(randint(1, 3000000)))
 	else:
 		await koneko.say("I'm sorry "+ctx.message.author.mention+", but this command is not currently, and may not ever be, available to the public.")
 
 @koneko.command(pass_context=True)
-async def hentaigel(ctx,*args):
+async def imggel(ctx,*args):
 	if (str(ctx.message.author) in admins):
 		await koneko.say("https://gelbooru.com/index.php?page=post&s=view&id="+str(randint(1,4079175)))
 	else:
 		await koneko.say("I'm sorry "+ctx.message.author.mention+", but this command is not currently, and may not ever be, available to the public.")
 
 @koneko.command(pass_context=True)
-async def hentai(ctx,*args):
+async def image(ctx,*args):
 	"""
 	( ͡° ͜ʖ ͡°)
 	"""
@@ -302,10 +302,10 @@ async def hentai(ctx,*args):
 	ahca = hentaif.read()
 	hentaif.close()
 	naca = re.findall(r'.{1,18}',ahca,re.DOTALL)
-	if (str(ctx.message.channel.id) in naca):#checks if the channel is allowed to have hentai posted in it.
+	if (str(ctx.message.channel.id) in naca):#checks if the channel is allowed to have images posted in it.
 		urlarr=[]
 		iserr=0#tracks errors
-		henstr=''#henstr stands for Hentai String
+		henstr=''#henstr stands for image String
 		lnkitr=0#lnkitr stands for Link Iteration
 		stupidvar=5#helps seperate the urls into chunks of 5
 		tstr = list(args)
@@ -322,7 +322,7 @@ async def hentai(ctx,*args):
 			iserr = 1
 
 		if(iserr==0):
-			ham=int(args[0])#HAM stands for Hentai Ammount
+			ham=int(args[0])#HAM stands for image Ammount
 			posts = danclient.post_list(tags=tstr, limit=ham)
 			try:
 				for post in posts:
@@ -378,7 +378,7 @@ async def arclog(ctx,*args):
 		os.system('rmlgrs.bat')
 		exit()
 	else:
-		await koneko.say("Fuck off "+ctx.message.author.mention+"!")
+		await koneko.say("This command is for admins only, "+ctx.message.author.mention+"!")
 
 @koneko.command()
 async def ppap(*args):
