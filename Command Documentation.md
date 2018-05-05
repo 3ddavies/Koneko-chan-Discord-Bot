@@ -1,6 +1,6 @@
 # COMMANDS:
 
-# [Koneko:](#koneko)
+# [Koneko:](#koneko-1)
 
 ## [Utility/Debug:](#utilitydebug)
 
@@ -61,7 +61,7 @@
 #### anako:
 Usage: ```!anako```
 
-Allows an admin to post a message as if it were [Koneko](#koneko). After issuing the command, if you have to correct permissions, you will get a message saying "Awaiting instruction". If you now switch to the command prompt, you will see 'Say: ' you can now type whatever you wish and upon pressing enter it will be posted from the bot's account. PLEASE NOTE: The bot cannot process other commands while in this mode so once you have finished typing, type ```/halt/``` in the command prompt to put allow [Koneko:](#koneko) to continue processing commands.
+Allows an admin to post a message as if it were [Koneko](#koneko-1). After issuing the command, if you have to correct permissions, you will get a message saying "Awaiting instruction". If you now switch to the command prompt, you will see 'Say: ' you can now type whatever you wish and upon pressing enter it will be posted from the bot's account. PLEASE NOTE: The bot cannot process other commands while in this mode so once you have finished typing, type ```/halt/``` in the command prompt to put allow [Koneko:](#koneko-1) to continue processing commands.
 
 #### arclog:
 Usage: ```!arclog```
@@ -86,7 +86,7 @@ Lists Danbooru tags in chat.
 #### logout:
 Usage: ```logout```
 
-Logs out [Koneko:](#koneko).
+Logs out [Koneko](#koneko-1).
 
 #### ostimes:
 Usage: ```!ostimes```
@@ -97,16 +97,16 @@ Prints the ostimes in chat. The result will be something like this:
 #### restart
 Usage: ```!restart```
 
-Restarts both [Koneko](#koneko) and [Kuroka](#kuroka)
+Restarts both [Koneko](#koneko-1) and [Kuroka](#kuroka)
 
 #### setchan
 Usage: ```!setchan```
-Tells [Koneko](#koneko) that images can be posted in the channel the command is issued in. NOTE: [image](#image) will not work if this is not done first.
+Tells [Koneko](#koneko-1) that images can be posted in the channel the command is issued in. NOTE: [image](#image) will not work if this is not done first.
 
 #### ss
 Usage: ```!ss args```
 
-Sets the ingame status of [Koneko](#koneko). Example: ```!ss with fire``` will set [Koneko](#koneko)'s ingame status to 'playing with fire'
+Sets the ingame status of [Koneko](#koneko-1). Example: ```!ss with fire``` will set [Koneko](#koneko)'s ingame status to 'playing with fire'
 
 
 #### stsca
