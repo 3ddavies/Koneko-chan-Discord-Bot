@@ -96,32 +96,32 @@ Usage: ```!ostimes```
 Prints the ostimes in chat. The result will be something like this:
 ```nt.times_result(user=3.203125, system=0.40625, children_user=0.0, children_system=0.0, elapsed=0.0)```
 
-#### restart
+#### restart:
 Usage: ```!restart```
 
 Restarts both [Koneko](#koneko-1) and [Kuroka](#kuroka)
 
-#### setchan
+#### setchan:
 Usage: ```!setchan```
 Tells [Koneko](#koneko-1) that images can be posted in the channel the command is issued in. NOTE: [image](#image) will not work if this is not done first.
 
-#### ss
+#### ss:
 Usage: ```!ss args```
 
 Sets the ingame status of [Koneko](#koneko-1). Example: ```!ss with fire``` will set [Koneko](#koneko)'s ingame status to 'playing with fire'
 
 
-#### stsca
+#### stsca:
 Usage: ```!stsca arg```
 
 Sets the escape argument for [anako](#anako). Example: ```!stsca /1234/``` sets the escape argument to ```/1234/```
 
-#### time
+#### time:
 Usage: ```!time```
 
 Prints the date and time in chat. the result will look somthing like this: 'The time is 11:43:27 and the date is 5/5/2018'
 
-#### vomit
+#### vomit:
 Usage: ```!vomit```
 
 Dumps the entire log into chat. This was created as a proof of concept. I recommend you never use this.
@@ -129,17 +129,17 @@ Dumps the entire log into chat. This was created as a proof of concept. I recomm
 
 ### File Exploring:
 
-#### cd
+#### cd:
 Usage: ```!cd```
 
 Changes the [pwd](#pwd)
 
-#### ls
+#### ls:
 Usage: ```!ls```
 
 Lists the contents of the [pwd](#pwd)
 
-#### pwd
+#### pwd:
 Usage: ```!pwd```
 
 Short for present working directory. Prints the [pwd](#pwd) in chat.
