@@ -1,8 +1,8 @@
 # COMMANDS:
 
-## Koneko:
+[Koneko:](#Koneko)
 
-### Utility/Debug:
+[Utility/Debug](#Utility/Debug)
 
 [anako](#anako)
 
@@ -45,7 +45,9 @@
 
 
 
+## Koneko:
 
+### Utility/Debug:
 
 #### anako:
 Usage: ```!anako```
