@@ -4,11 +4,16 @@
 
 ### Utility/Debug:
 
-[anako](#anako) 
-[arclog](#arclog) 
-[gab](#gab) 
-[getauth](#getauth) 
-[listtags](#listtags) 
+[anako](#anako)
+
+[arclog](#arclog)
+
+[gab](#gab)
+
+[getauth](#getauth)
+
+[listtags](#listtags)
+
 #### logout
 #### ostimes
 #### restart
