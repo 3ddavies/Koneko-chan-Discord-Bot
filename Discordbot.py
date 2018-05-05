@@ -350,7 +350,7 @@ async def image(ctx,*args):
 						lnkitr = lnkitr +1
 				await koneko.say(henstr)
 			except IndexError:
-				await koneko.say("S-sorry m-mister. I-i... The n-numbers... were t-to big.:flushed:\n```\nUsage: !hentai NumberOfImages Tags Tags Tags (you get the idea)\n```")
+				await koneko.say("S-sorry m-mister. I-i... The n-numbers... were t-to big.:flushed:\n```\nUsage: !image NumberOfImages Tags Tags Tags (you get the idea)\n```")
 	else:
 		await koneko.say("This channel is not set up for this kind of content. If it should be, please use !setchan")
 
