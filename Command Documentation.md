@@ -40,7 +40,7 @@
 [pwd](#pwd)
 
 
-### [Other:](#other-1)
+### [Other:](#other-2)
 
 [credits](#credits)
 
@@ -73,7 +73,7 @@
 [vci](#vci)
 
 
-### [Other:](#other-2)
+### [Other:](#other-3)
 
 [dice](#dice)
 
