@@ -162,10 +162,16 @@ Usage: ```!gif```
 This was a proof of concept that GIF images could be uploaded via [Koneko](#koneko-1). Posts [this gif](dancingmiku2.gif) in chat.
 
 #### image:
-Usage: ```!image```
+Usage: ```!image x Tags, tags, tags, etc.```
+
+Grabs x images from Danbooru with specified tags where x is the number of images to grab and posts them in chat. You will first need to use the [setchan](#setchan) command in the channel you are trying to post images in before [Koneko](#koneko-1) will post images to it. Example: ```!image 5 hero``` will return 5 images with the tag 'hero'. You can have as many tags as you like but there is a limit of 100 images per request so if you need more just issue the command multiple times.
 
 #### ppap:
 Usage: ```!ppap```
 
+Prints 'Just for you, Gil: https://www.youtube.com/watch?v=0E00Zuayv9Q' in chat.
+
 #### stats:
 Usage: ```!stats```
+
+Prints [Koenko](#koneko-1)'s stats in chat. The result will look somthing like this: 'I'm currently enjoying the privilege of being connected to 8 servers and I'm currently serving 172 lovely users! 😘'
