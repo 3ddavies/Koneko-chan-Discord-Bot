@@ -97,7 +97,7 @@ Prints the ostimes in chat. The result will be something like this:
 #### restart
 Usage: ```!restart```
 
-Restarts both [Koneko:](#koneko) and [Kuroka](#kuroka)
+Restarts both [Koneko](#koneko) and [Kuroka](#kuroka)
 
 #### setchan
 Usage: ```!setchan```
