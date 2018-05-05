@@ -53,12 +53,15 @@
 [stats](#stats)
 
 
-### Deprecated:
-#### climsg
-#### imgdan
-#### imggel
-#### omgmt
+### [Deprecated:](#deprecated-1)
 
+[climsg](#climsg)
+
+[imgdan](#imgdan)
+
+[imggel](#imggel)
+
+[omgmt](#omgmt)
 
 
 
@@ -175,3 +178,26 @@ Prints 'Just for you, Gil: https://www.youtube.com/watch?v=0E00Zuayv9Q' in chat.
 Usage: ```!stats```
 
 Prints [Koenko](#koneko-1)'s stats in chat. The result will look somthing like this: 'I'm currently enjoying the privilege of being connected to 8 servers and I'm currently serving 172 lovely users! 😘'
+
+
+### Deprecated:
+
+#### climsg:
+Usage: ```!climsg```
+
+An older and lesser version of [anako](#anako).
+
+#### imgdan:
+Usage: ```!imgdan```
+
+This and [imggel](#imggel) are both primitive precursors to [image](#image). How this command works is it generates a random interger from 1 to 3000000 and appends it to 'http://danbooru.donmai.us/posts/'.
+
+#### imggel:
+Usage: ```!imggel```
+
+This and [imgdan](#imgdan) are both primitive precursors to [image](#image). How this command works is it generates a random interger from 1 to 4079175 and appends it to 'https://gelbooru.com/index.php?page=post&s=view&id='.
+
+#### omgmt:
+Usage: ```!omgmt```
+
+Stands for once more get message test. Omgmt is a test in getting the id of a message [Koneko](#koneko-1) sent and then deleting her own message.
