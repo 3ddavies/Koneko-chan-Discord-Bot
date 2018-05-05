@@ -1,6 +1,6 @@
 # COMMANDS:
 
-[Koneko:](#Koneko)
+[Koneko:](#koneko)
 
 [Utility/Debug:](#utilitydebug)
 
@@ -14,14 +14,23 @@
 
 [listtags](#listtags)
 
-#### logout
-#### ostimes
-#### restart
-#### setchan
-#### ss
-#### stsca
-#### time
-#### vomit
+[logout](#logout)
+
+[ostimes](#ostimes)
+
+[restart](#restart)
+
+[setchan](#setchan)
+
+[ss](#ss)
+
+[stsca](#stsca)
+
+[time](#time)
+
+[vomit](#vomit)
+
+
 
 ### File Exploring:
 
@@ -73,3 +82,36 @@ Short for 'Get author'. This exists as a test for the ```pass_context``` argumen
 Usage: ```!listtags```
 
 Lists Danbooru tags in chat.
+
+#### logout:
+Usage: ```logout```
+
+Logs out Koneko.
+
+#### ostimes:
+Usage: ```!ostimes```
+Prints the ostimes in chat. The result will be something like this ```nt.times_result(user=3.203125, system=0.40625, children_user=0.0, children_system=0.0, elapsed=0.0)```
+
+#### restart
+Usage: ``` ```
+
+
+#### setchan
+Usage: ``` ```
+
+
+#### ss
+Usage: ``` ```
+
+
+#### stsca
+Usage: ``` ```
+
+
+#### time
+Usage: ``` ```
+
+
+#### vomit
+Usage: ``` ```
+
