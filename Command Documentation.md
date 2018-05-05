@@ -286,6 +286,6 @@ Usage: ```-music pause```
 Stops playing audio. If you want to be able to resume playing, use [pause](#pause) isntead.
 
 #### resume:
-Usage: ```music resume```
+Usage: ```-music resume```
 
 Resumes playing paused audio. Will not work if you used [stop](#stop)
