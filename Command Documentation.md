@@ -40,12 +40,18 @@
 [pwd](#pwd)
 
 
-### Other:
-#### credits
-#### gif
-#### image
-#### ppap
-#### stats
+### [Other:](#other-1)
+
+[credits](#credits)
+
+[gif](#gif)
+
+[image](#image)
+
+[ppap](#ppap)
+
+[stats](#stats)
+
 
 ### Deprecated:
 #### climsg
@@ -143,3 +149,23 @@ Lists the contents of the [pwd](#pwd)
 Usage: ```!pwd```
 
 Short for present working directory. Prints the [pwd](#pwd) in chat.
+
+
+### Other:
+
+#### credits:
+Usage: ```!credits```
+Prints 'Programmed by Gabe @Jupiter and Mars' in chat.
+
+#### gif:
+Usage: ```!gif```
+This was a proof of concept that GIF images could be uploaded via [Koneko](#koneko-1). Posts [this gif](dancingmiku2.gif) in chat.
+
+#### image:
+Usage: ```!image```
+
+#### ppap:
+Usage: ```!ppap```
+
+#### stats:
+Usage: ```!stats```
