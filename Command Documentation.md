@@ -262,4 +262,15 @@ The music command is a bit different then the other commands. It has six subcomm
 
 #### join:
 Usage: ```-music join```
+
 Makes [Kuroka](#kuroka-1) join the voice channel you are currently connected to. This means you must be in a voice channel for this to work. PLEASE NOTE: If [Kuroka](#kuroka-1) is already in a voice channel, please use [leave](#leave) first as switching between voice channels is not yet supported.
+
+#### leave:
+Usage: ```-music leave```
+
+Makes [Kuroka](#kuroka-1) leave the voice channel she is currently connected to.
+
+### pause:
+Usage: ```-music pause```
+
+Pauses what is currently being played. The difference between this and [stop](#stop) is that if you use [pause](#pause) you can use [resume](#resume) to resume playing where as [stop](#stop) can't be resumed.
