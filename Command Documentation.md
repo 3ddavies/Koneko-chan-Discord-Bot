@@ -48,6 +48,8 @@
 
 [image](#image)
 
+[ping](#ping)
+
 [ppap](#ppap)
 
 [stats](#stats)
@@ -62,6 +64,34 @@
 [imggel](#imggel)
 
 [omgmt](#omgmt)
+
+
+# [Kuroka:](#kuroka-1)
+
+## [Utility/Debug:](#utilitydebug-2)
+
+[vci](#vci)
+
+
+### [Other:](#other-2)
+
+[dice](#dice)
+
+
+### [Music:](#music-1)
+
+[join](#join)
+
+[leave](#leave)
+
+[pause](#pause)
+
+[play](#play)
+
+[stop](#stop)
+
+[resume](#resume)
+
 
 
 
@@ -169,6 +199,11 @@ Usage: ```!image x Tags, tags, tags, etc.```
 
 Grabs x images from Danbooru with specified tags where x is the number of images to grab and posts them in chat. You will first need to use the [setchan](#setchan) command in the channel you are trying to post images in before [Koneko](#koneko-1) will post images to it. Example: ```!image 5 hero``` will return 5 images with the tag 'hero'. You can have as many tags as you like but there is a limit of 100 images per request so if you need more just issue the command multiple times.
 
+#### ping:
+Usage: ```!ping```
+
+Prints '🏓 Pong!' in chat.
+
 #### ppap:
 Usage: ```!ppap```
 
@@ -201,3 +236,7 @@ This and [imgdan](#imgdan) are both primitive precursors to [image](#image). How
 Usage: ```!omgmt```
 
 Stands for once more get message test. Omgmt is a test in getting the id of a message [Koneko](#koneko-1) sent and then deleting her own message.
+
+
+
+## Kuroka:
