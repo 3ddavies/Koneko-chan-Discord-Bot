@@ -31,12 +31,14 @@
 [vomit](#vomit)
 
 
+### [File Exploring:](#fileexploring-1)
 
-### File Exploring:
+[cd](#cd)
 
-#### cd
-#### ls
-#### pwd
+[ls](#ls)
+
+[pwd](#pwd)
+
 
 ### Other:
 #### credits
@@ -125,3 +127,19 @@ Usage: ```!vomit```
 Dumps the entire log into chat. This was created as a proof of concept. I recommend you never use this.
 
 
+### File Exploring:
+
+#### cd
+Usage: ```!cd```
+
+Changes the [pwd](#pwd)
+
+#### ls
+Usage: ```!ls```
+
+Lists the contents of the [pwd](#pwd)
+
+#### pwd
+Usage: ```!pwd```
+
+Short for present working directory. Prints the current [pwd](#pwd) in chat.
