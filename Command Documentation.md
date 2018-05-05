@@ -61,7 +61,7 @@
 #### anako:
 Usage: ```!anako```
 
-Allows an admin to post a message as if it were the bot. After issuing the command, if you have to correct permissions, you will get a message saying "Awaiting instruction". If you now switch to the command prompt, you will see 'Say: ' you can now type whatever you wish and upon pressing enter it will be posted from the bot's account. PLEASE NOTE: The bot cannot process other commands while in this mode so once you have finished typing, type ```/halt/``` in the command prompt to put allow Koneko to continue processing commands.
+Allows an admin to post a message as if it were [Koneko](#koneko). After issuing the command, if you have to correct permissions, you will get a message saying "Awaiting instruction". If you now switch to the command prompt, you will see 'Say: ' you can now type whatever you wish and upon pressing enter it will be posted from the bot's account. PLEASE NOTE: The bot cannot process other commands while in this mode so once you have finished typing, type ```/halt/``` in the command prompt to put allow [Koneko:](#koneko) to continue processing commands.
 
 #### arclog:
 Usage: ```!arclog```
@@ -86,32 +86,42 @@ Lists Danbooru tags in chat.
 #### logout:
 Usage: ```logout```
 
-Logs out Koneko.
+Logs out [Koneko:](#koneko).
 
 #### ostimes:
 Usage: ```!ostimes```
-Prints the ostimes in chat. The result will be something like this ```nt.times_result(user=3.203125, system=0.40625, children_user=0.0, children_system=0.0, elapsed=0.0)```
+
+Prints the ostimes in chat. The result will be something like this:
+```nt.times_result(user=3.203125, system=0.40625, children_user=0.0, children_system=0.0, elapsed=0.0)```
 
 #### restart
-Usage: ``` ```
+Usage: ```!restart```
 
+Restarts both [Koneko:](#koneko) and [Kuroka](#kuroka)
 
 #### setchan
-Usage: ``` ```
-
+Usage: ```!setchan```
+Tells [Koneko](#koneko) that images can be posted in the channel the command is issued in. NOTE: [image](#image) will not work if this is not done first.
 
 #### ss
-Usage: ``` ```
+Usage: ```!ss args```
+
+Sets the ingame status of [Koneko](#koneko). Example: ```!ss with fire``` will set [Koneko](#koneko)'s ingame status to 'playing with fire'
 
 
 #### stsca
-Usage: ``` ```
+Usage: ```!stsca arg```
 
+Sets the escape argument for [anako](#anako). Example: ```!stsca /1234/``` sets the escape argument to ```/1234/```
 
 #### time
-Usage: ``` ```
+Usage: ```!time```
 
+Prints the date and time in chat. the result will look somthing like this: 'The time is 11:43:27 and the date is 5/5/2018'
 
 #### vomit
-Usage: ``` ```
+Usage: ```!vomit```
+
+Dumps the entire log into chat. This was created as a proof of concept. I recommend you never use this.
+
 
