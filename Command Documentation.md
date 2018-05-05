@@ -142,4 +142,4 @@ Lists the contents of the [pwd](#pwd)
 #### pwd
 Usage: ```!pwd```
 
-Short for present working directory. Prints the current [pwd](#pwd) in chat.
+Short for present working directory. Prints the [pwd](#pwd) in chat.
