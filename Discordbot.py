@@ -35,7 +35,7 @@ https://creativecommons.org/licenses/by-sa/4.0/
 
 
 admins =['Jupiter and Mars#9960','Cyro#6377','⛧AirStrikerAlex⛧#8618']
-danclient = Danbooru('danbooru', username='Gabirel', api_key='Danbooru api key here')
+danclient = Danbooru('danbooru', username='Dan booru username here', api_key='Danbooru api key here')
 tags = danclient.tag_list(order='date')
 
 """
