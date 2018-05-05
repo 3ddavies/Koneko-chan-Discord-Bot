@@ -248,3 +248,10 @@ Usage: ```-vci```
 
 Short for voice channel info. Returns info about the voice channel you are in so you must be in a voice channel in order for this to work. [Kuroka](#kuroka-1) will return somthing like this: '@Jupiter and Mars is connected to voice channel Test id: 440307901542957057'
 
+
+### Other:
+
+#### dice:
+Usage: ```-dice x y```
+
+Rolls x dice with y sides and posts [this gif](dice.gif). Example: ```-dice 5 6``` will roll five six-sided dice. The gif is posted first then the result looks somthing like this: 'You rolled 5 d6s. They landed on: \[5, 3, 5, 2, 3\] for a total of 18'
